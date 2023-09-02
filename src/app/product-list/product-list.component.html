@@ -1,0 +1,8 @@
+<h1>Product List Father</h1>
+
+<div *ngFor = "let items of products" >
+<app-product-detail 
+    [product] = "items"                           
+    (productSelected) = "handleProductSelected($event)" > 
+</app-product-detail>
+</div>
