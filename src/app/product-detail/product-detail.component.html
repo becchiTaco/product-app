@@ -1,4 +1,4 @@
-<div *ngIf="product" class="product-row">
+<div *ngIf="product" [ngClass]="{'product-row': true, 'stock-low': (product.stock===0)}">
     <img [src]="product.image" alt="product.name" width="350" height="250"/>
     <div class="product-details">
         <h2>{{product.name}}</h2>

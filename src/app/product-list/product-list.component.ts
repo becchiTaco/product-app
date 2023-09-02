@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 
 export class ProductListComponent {
   selectProduct: any;                                 //
+  carCount: number = 0;
+
 
   products = [
     {
@@ -25,6 +27,9 @@ export class ProductListComponent {
   ];
 
   handleProductSelected(product: any) {               //
+    this.selectProduct = product;
+    product.stock--;
+    this.carCount++;
     alert("Producto Seleccionado: " + product.name + " \n Tiene un precio de: " + product.price);    //
   }
 }

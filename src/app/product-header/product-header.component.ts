@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-product-header',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-header.component.css']
 })
 export class ProductHeaderComponent {
+  @Input() carCount: number = 0;
+
 
 }

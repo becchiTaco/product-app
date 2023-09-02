@@ -1,11 +1,18 @@
+/*Clases*/
 :host {
     display: block;
-    padding: 15px;
     margin-top: 10px;
     border: 2px solid #007bff;
     background-color: #f2faff;
+
 }
 
+.stock-low {
+    background-color: rgb(255, 131, 131);
+    border: 4px solid red;
+}
+
+/*Clase por etiqueta*/
 h2 {
     color: #007bff;
 }
@@ -20,13 +27,14 @@ button {
     background-color: #007bff;
     border: none;
     cursor: pointer;
-    transition: background-color 3ms ease;
+    transition: background-color 300ms ease;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/*Clases definidas dentro de los bloques de código html que se quieren afectar especificamente*/
 .product-row {
     display: flex;
     align-items: center;
