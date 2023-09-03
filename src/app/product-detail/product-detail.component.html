@@ -1,14 +1,14 @@
-<div *ngIf="product" [ngClass]="{'product-row': true, 'stock-low': (product.stock===0)}">
-    <img [src]="product.image" alt="product.name" width="350" height="250"/>
+<div *ngIf="Dproduct" [ngClass]="{'product-row': true, 'stock-low': (Dproduct.stock===0)}">
+    <img [src]="Dproduct.image" alt="product.name" width="350" height="250"/>
     <div class="product-details">
-        <h2>{{product.name}}</h2>
-        <p> {{product.description}}</p>
-        <p><strong>Precio </strong> {{product.price | currency}}</p>
-        <button *ngIf="product.stock > 0" (click)="selectProduct()">Agregar al Carrito </button>
-        <div [hidden]="!product.stock">
-            <p *ngIf="product.stock > 1">Quedan {{product.stock}} unidades</p>
-            <p *ngIf="product.stock === 1">Queda {{product.stock}} unidad</p>
+        <h2>{{Dproduct.name}}</h2>
+        <p> {{Dproduct.description}}</p>
+        <p><strong>Precio </strong> {{Dproduct.price | currency}}</p>
+        <button *ngIf="Dproduct.stock > 0" (click)="selectProduct()">Agregar al Carrito </button>
+        <div [hidden]="!Dproduct.stock">
+            <p *ngIf="Dproduct.stock > 1">Quedan {{Dproduct.stock}} unidades</p>
+            <p *ngIf="Dproduct.stock === 1">Queda {{Dproduct.stock}} unidad</p>
         </div>
-        <h3 style="color: red;" *ngIf="product.stock === 0">AGOTADO</h3>
+        <h3 style="color: red;" *ngIf="Dproduct.stock === 0">AGOTADO</h3>
     </div>
 </div>

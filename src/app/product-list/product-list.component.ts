@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core';            //Impota decoradores (Component) desde @angular/core
 
-@Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+@Component({                                          //Este fragmento de código se usa para configurar el componente
+  selector: 'app-product-list',                       //Selector es una cadena que especifica como se puede usar el compoennte de una plantilla.  HTML
+  templateUrl: './product-list.component.html',       //La propiedad templateUrl define la ubicación de la plantilla HTML.
+  styleUrls: ['./product-list.component.css']         //La propuedad styleUrls define la ruta de la hoja de estilo.
 })
 
-export class ProductListComponent {
-  selectProduct: any;                                 //
-  carCount: number = 0;
+export class ProductListComponent {                   //Habilita y crea la clase ProductListComponent para todo el documento
+  selectProduct: any;                                 //Se crea la variable selectProduct de cualquier tipo.
+  LcarCount: number = 0;                               //Se crea la variable carCount de tipo numero e iugal a 0.
 
 
-  products = [
+  products = [                                        //Se crea un arreglo de objetos con datos id, name, description, price, stock, image
     {
       id: 1, name: "Laptop", description: "Es una Laptop", price: 1500, stock: 10,
       image: 'https://media.mipc.com.mx/catalog/product/cache/7290563697b2fb024a6e1f3ba6ae4586/9/9/99364481b5b5420d927eb50e004e2330.jpg'
@@ -26,10 +26,10 @@ export class ProductListComponent {
     }
   ];
 
-  handleProductSelected(product: any) {               //
-    this.selectProduct = product;
-    product.stock--;
-    this.carCount++;
-    alert("Producto Seleccionado: " + product.name + " \n Tiene un precio de: " + product.price);    //
+  handleProductSelected(Lproduct: any) {                                                              //Se crea una función llamada handleProductSelected y se crea la variable Lproduct de valor any
+    this.selectProduct = Lproduct;                                                                    // Se almacena en la memoria de selectProduct el producto escogido.
+    Lproduct.stock--;                                                                                 //Le resta 1 al stock
+    this.LcarCount++;                                                                                 //Le suma 1 a la variable global carCount
+    alert("Producto Seleccionado: " + Lproduct.name + " \n Tiene un precio de: " + Lproduct.price);    //Emite una alerta con un texto y concatena elementos de product (name, price)
   }
 }

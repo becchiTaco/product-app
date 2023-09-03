@@ -1,9 +1,23 @@
+/*Defien todo el componente con un background gris, ocupa todo el ancho del dispositivo*/
 :host {
     background-color: gray;
     display: block;
     padding: 20px;
 }
 
+/*Define el div y separa el espacion con flex  usando la propiedad justify-content: space-between*/
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Texto en color blanco*/
 h1 {
     color: white;
+}
+
+/*Texto en color blanco y todo en mayusculas*/
+p {
+    color: white;
+    text-transform: uppercase;
 }
