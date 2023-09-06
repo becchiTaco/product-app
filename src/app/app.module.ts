@@ -8,6 +8,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { CommonModule } from '@angular/common';
 import { ProductHeaderComponent } from './product-header/product-header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReversePipePipe } from './reverse-pipe.pipe';
 
 
 @NgModule({
@@ -16,11 +18,14 @@ import { ProductHeaderComponent } from './product-header/product-header.componen
     ProductDetailComponent,
     ProductListComponent,
     ProductHeaderComponent,
+    ReversePipePipe
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

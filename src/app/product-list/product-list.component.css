@@ -1,11 +1,10 @@
-/*Para el componente en general bloquea el display, genera un amrgen interno de 20px y un color de fondo blanco grisaceo*/
 :host {
     display: block;
     padding: 20px;
     background-color: #e7f5ff;
+    /* Color azul claro */
 }
 
-/*Genera un encabezado de color negro claro*/
 h1 {
     color: #333;
 }

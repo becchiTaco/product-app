@@ -1,4 +1,28 @@
-<div>                                           <!-- Se genera un div para dividir la zona -->
-    <h1> Tienda </h1>                               <!-- Se genera un header llamado Tienda -->
-    <p> Items del Carrito: {{HcarCount}} </p>   <!-- Se genera un parrafon donde se hace un binding de interpolación para la variable HcarCount -->
-</div>
+<header class="header-container">
+    <h1> Tienda </h1>                                                                   <!-- Se genera un header llamado Tienda -->
+    <div class="car-section">                                                           <!-- Se genera un div para dividir la zona -->
+    <fa-icon [icon]="faCartShopping" (click) = "openCartModal()"></fa-icon> 
+        <p> Items del Carrito: {{HcarCount}} </p>                                       <!-- Se genera un parrafon donde se hace un binding de interpolación para la variable HcarCount -->
+        <i class="far fa-cart-plus"></i>
+    </div>
+    <!-- Modal -->
+    <div class="modal" [ngClass]="{'show-modal':showModal}">
+        <div class="modal-content">
+            <span class="close-button" (click)="closeCartModal()">&times;</span>
+            <p>Listado de productos en el carrito</p>
+                <ul>
+                    <li *ngFor="let Hproduct of LcarProducts">
+                        <div class="cart-product">
+                            <img [src]="Hproduct.image" [alt]="Hproduct.name" width="50" height="50" />
+                            <div class="cart-product">
+                                <p>{{Hproduct.name}}</p>
+                                <p><strong>Precio: </strong> {{Hproduct.price | currency}}</p>
+                                <p><strong>Cantidad: </strong> {{Hproduct.quantity}}</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</header>
