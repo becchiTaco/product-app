@@ -1,10 +1,10 @@
 <app-product-header [HcarCount]="LcarCount" [LcarProducts]="LcarProduct"></app-product-header>      <!-- Se crea la etiqueta app-product-header y se iguala la cuenta del header a la cuenta del arreglo -->
 <h1>Product List Father</h1>                                                                        <!-- Encabezado H1 -->
-
+<app-login></app-login>
 <div *ngFor = "let items of products" >                                                             <!-- El *ngFor ayudará a iterar la lista de productos igualandolo a una variable items -->
 <!-- Se crea la etiqueta app-product-detail -->    
 <app-product-detail                                                             
     [Dproduct] = "items" (DproductSelected) = "handleProductSelected($event)" >                     <!-- Hace binding de propiedad  desde la variable Dproduct de detail a la variable item declarada anteriomente que se relaciona con el Input de detail, después un  binding event de DproductSelected igualado a handleProductSelected($event) que corresponde al @Output de detail -->
 </app-product-detail>
 </div>
-<p> {{var_pipe | reversePipe}} </p>
+<p> {{var_pipe | reversePipe}} </p>                                                                 <!-- Agrega la variable var_pipe a la cual se le adjuntará el pipe reverse pipe (pipe personalizado para invertir las letras) -->

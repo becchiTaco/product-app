@@ -1,0 +1,26 @@
+:host{
+    background-color: #fff;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 8px 16px;
+}
+
+span{
+    color: red;
+}
