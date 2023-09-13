@@ -15,15 +15,22 @@ export class ProductListComponent {                           //Habilita y crea 
   products = [                                                //Se crea un arreglo de objetos con datos id, name, description, price, stock, image
     {
       id: 1, name: "Laptop", description: "Es una Laptop", price: 1500, stock: 10,
-      image: 'https://media.mipc.com.mx/catalog/product/cache/7290563697b2fb024a6e1f3ba6ae4586/9/9/99364481b5b5420d927eb50e004e2330.jpg'
+      image: 'https://media.mipc.com.mx/catalog/product/cache/7290563697b2fb024a6e1f3ba6ae4586/9/9/99364481b5b5420d927eb50e004e2330.jpg',
+      color: 'grey',
+      specs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sem ornare, sollicitudin orci sed, dictum elit. Sed nibh mi, imperdiet sed pulvinar ut, semper sed tellus. Duis vel fringilla risus. In condimentum interdum felis. Phasellus et tincidunt magna, eu mattis ipsum. Donec scelerisque ac sapien sit amet egestas. Morbi lacus augue, tempor ut massa vel, ullamcorper ultricies odio. Cras ut placerat dolor, vel tristique turpis. Aliquam ligula massa, sagittis nec lectus sed, aliquam sagittis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc eget tellus pharetra volutpat ac nec urna. Quisque finibus sed ante a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum nisi sem. Sed elementum vehicula dignissim."
     },
     {
       id: 2, name: "Teclado", description: "Es un Teclado", price: 1000, stock: 10,
-      image: 'https://media.mipc.com.mx/catalog/product/cache/7290563697b2fb024a6e1f3ba6ae4586/8/b/8be5c4dcf0d39c1ffb5587840996882f.jpg'
+      image: 'https://media.mipc.com.mx/catalog/product/cache/7290563697b2fb024a6e1f3ba6ae4586/8/b/8be5c4dcf0d39c1ffb5587840996882f.jpg',
+      color: 'grey',
+      specs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sem ornare, sollicitudin orci sed, dictum elit. Sed nibh mi, imperdiet sed pulvinar ut, semper sed tellus. Duis vel fringilla risus. In condimentum interdum felis. Phasellus et tincidunt magna, eu mattis ipsum. Donec scelerisque ac sapien sit amet egestas. Morbi lacus augue, tempor ut massa vel, ullamcorper ultricies odio. Cras ut placerat dolor, vel tristique turpis. Aliquam ligula massa, sagittis nec lectus sed, aliquam sagittis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc eget tellus pharetra volutpat ac nec urna. Quisque finibus sed ante a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum nisi sem. Sed elementum vehicula dignissim."
     },
     {
       id: 3, name: "Mouse", description: "Es un Mouse", price: 500, stock: 10,
-      image: 'https://www.rockinit.co.za/wp-content/uploads/2020/10/Razer-Naga-Pro-Modular-Wireless-Mouse-with-Swappable-Side-Plates.jpg'
+      image: 'https://www.rockinit.co.za/wp-content/uploads/2020/10/Razer-Naga-Pro-Modular-Wireless-Mouse-with-Swappable-Side-Plates.jpg',
+      color: 'grey',
+      specs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sem ornare, sollicitudin orci sed, dictum elit. Sed nibh mi, imperdiet sed pulvinar ut, semper sed tellus. Duis vel fringilla risus. In condimentum interdum felis. Phasellus et tincidunt magna, eu mattis ipsum. Donec scelerisque ac sapien sit amet egestas. Morbi lacus augue, tempor ut massa vel, ullamcorper ultricies odio. Cras ut placerat dolor, vel tristique turpis. Aliquam ligula massa, sagittis nec lectus sed, aliquam sagittis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc eget tellus pharetra volutpat ac nec urna. Quisque finibus sed ante a malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum nisi sem. Sed elementum vehicula dignissim."
+
     }
   ];
 

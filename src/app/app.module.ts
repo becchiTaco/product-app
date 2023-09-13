@@ -11,6 +11,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReversePipePipe } from './reverse-pipe.pipe';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +25,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductListComponent,
     ProductHeaderComponent,
     ReversePipePipe,
-    LoginComponent
+    LoginComponent,
+    ProductDescriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NoopAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

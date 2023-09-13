@@ -5,6 +5,8 @@
         <p> {{Dproduct.description}}</p>
         <p><strong>Precio </strong> {{Dproduct.price | currency}}</p>
         <button *ngIf="Dproduct.stock > 0" (click)="selectProduct()">Agregar al Carrito </button>
+        <br> <br>
+        <button (click)="showDetail()">Ver Detalles</button>
         <div [hidden]="!Dproduct.stock">
             <p *ngIf="Dproduct.stock > 1">Quedan {{Dproduct.stock}} unidades</p>
             <p *ngIf="Dproduct.stock === 1">Queda {{Dproduct.stock}} unidad</p>

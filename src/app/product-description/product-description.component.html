@@ -1,0 +1,17 @@
+<h1>Detalles del Producto</h1>
+<div *ngIf="DESproduct" [ngClass]="{'product-row': true, 'stock-low': (DESproduct.stock===0)}">
+    <img [src]="DESproduct.image" alt="product.name" width="400" height="400"/>
+    <div class="product-details">
+        <h1>{{DESproduct.name}}</h1>
+        <p> {{DESproduct.description}}</p>
+        <p><strong>Precio </strong> {{DESproduct.price | currency}}</p>
+        <p>{{DESproduct.color}}</p>
+        <p>{{DESproduct.specs}}</p>
+        <button *ngIf="DESproduct.stock > 0" (click)="selectProduct()">Agregar al Carrito </button>
+        <div [hidden]="!DESproduct.stock">
+            <p *ngIf="DESproduct.stock > 1">Quedan {{DESproduct.stock}} unidades</p>
+            <p *ngIf="DESproduct.stock === 1">Queda {{DESproduct.stock}} unidad</p>
+        </div>
+        <h3 style="color: red;" *ngIf="DESproduct.stock === 0">AGOTADO</h3>
+    </div>
+</div>
